@@ -13,8 +13,7 @@ public class GildedRose {
 						item.setQuality(item.getQuality() - 1);
 					}
 				}
-			} else {
-				if (item.getQuality() < 50) {
+			} else if (item.getQuality() < 50) {
 					item.setQuality(item.getQuality() + 1);
 
 					if (item.getName().equals("Backstage passes to a TAFKAL80ETC concert")) {
@@ -31,7 +30,7 @@ public class GildedRose {
 						}
 					}
 				}
-			}
+			
 
 			if (item.getName() != "Sulfuras, Hand of Ragnaros") {
 				item.setSellIn(item.getSellIn() - 1);
@@ -48,10 +47,8 @@ public class GildedRose {
 					} else {
 						item.setQuality(item.getQuality() - item.getQuality());
 					}
-				} else {
-					if (item.getQuality() < 50) {
+				} else if (item.getQuality() < 50) {
 						item.setQuality(item.getQuality() + 1);
-					}
 				}
 			}
 		}
