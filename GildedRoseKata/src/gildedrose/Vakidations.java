@@ -5,6 +5,7 @@ import java.util.List;
 public class Vakidations {
 
 	Backstage back = new Backstage();
+
 	public void Quality(List<Item> items) {
 		for (Item item : items) {
 
@@ -18,10 +19,10 @@ public class Vakidations {
 				}
 			} else if (item.getQuality() < 50) {
 				item.setQuality(item.getQuality() + 1);
-				
-				back.Quality(items);
+
+				back.QualityBackstage(items);
 			}
-			
+
 			if (item.getName() != "Sulfuras, Hand of Ragnaros") {
 				item.setSellIn(item.getSellIn() - 1);
 			}

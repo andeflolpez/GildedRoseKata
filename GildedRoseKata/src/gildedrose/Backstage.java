@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Backstage {
 	
-	public void Quality(List<Item> items) {
+	public void QualityBackstage(List<Item> items) {
 		for (Item item : items) {
 			if (item.getName().equals(
 					"Backstage passes to a TAFKAL80ETC concert")) {
