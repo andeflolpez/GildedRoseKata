@@ -19,8 +19,7 @@ public class Validations {
 					}
 				}
 			} else {
-
-				item.setQuality(item.getQuality() + 1);
+				
 				quality.update(item);
 
 				back.QualityBackstage(items);
