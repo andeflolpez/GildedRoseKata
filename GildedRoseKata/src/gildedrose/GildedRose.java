@@ -3,7 +3,7 @@ package gildedrose;
 import java.util.List;
 
 public class GildedRose {
-	Vakidations valida = new Vakidations();
+	Validations valida = new Validations();
 	
 	public void updateQuality(List<Item> items) {
 		valida.Quality(items);
