@@ -11,5 +11,12 @@ public class Quality {
 			item.setQuality(item.getQuality() + 1);
 		}
 	}
-
+	
+	public void updateless(Item item){
+		
+		item.setQuality(item.getQuality() - item.getQuality());
+	}
+   public void quality(Item item){
+	   item.setQuality(item.getQuality() - 1);
+   }
 }
